@@ -1,0 +1,231 @@
+.mintFooterContainer {
+  width: 100%;
+  bottom: 0;
+
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  background-color: #7192f3;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footerContent {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.sanuraImg {
+  width: 220px;
+  height: 220px;
+  top: -190px;
+  position: absolute;
+}
+
+.mintDetail {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .addressLabel {
+    font-family: 'Gotham Medium';
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+  }
+
+  .walletAddress {
+    margin-top: 6px;
+    font-family: 'Bariol';
+    font-size: 21px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+  }
+
+  .checkout {
+    color: #fff;
+    width: unset;
+  }
+
+  .itemPrice {
+    font-family: 'Bariol';
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+  }
+
+  .mintCount {
+    font-family: 'Gotham Medium';
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+
+    span {
+      font-family: 'Bariol';
+      font-size: 20px;
+      font-weight: normal;
+    }
+  }
+
+  .totoalPrice {
+    font-family: 'Bariol';
+    font-size: 22px;
+    font-weight: normal;
+
+    .priceLabel {
+      font-family: 'Gotham Medium';
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  .sepLine {
+    width: 100%;
+    height: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .mintBtn {
+    width: 164px;
+    height: 63px;
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.21);
+    border: solid 2px #e83324;
+    background-color: #e83324;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Gotham Medium';
+    font-size: 32px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+
+    &:disabled {
+      opacity: 0.8;
+    }
+
+    &.soldOut {
+      font-size: 24px;
+    }
+
+    .loadingIconContainer {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerContent {
+    padding: 0 20px;
+  }
+
+  .mintFooterContainer {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .sanuraImg {
+    width: 130px;
+    height: 130px;
+    top: -120px
+  }
+
+  .mintDetail {
+    flex-direction: column;
+    align-items: center;
+
+    .checkout {
+      width: 200px;
+    }
+
+    .itemPrice {
+      font-size: 16px;
+    }
+
+    .mintCount {
+      font-size: 12px;
+
+      span {
+        font-size: 16px;
+      }
+    }
+
+    .totoalPrice {
+      font-size: 14px;
+
+      .priceLabel {
+        font-size: 16px;
+      }
+    }
+
+    .mintBtn {
+      margin-top: 20px;
+      margin-bottom: 0;
+      height: 42px;
+      font-size: 24px;
+
+      .loadingIconContainer {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .walletAddressContainer {
+    display: none;
+  }
+}
+
+/** responsive based on screen height **/
+@media screen and (max-height: 750px) {
+  .mintFooterContainer {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .sanuraImg {
+    width: 130px;
+    height: 130px;
+    top: -120px
+  }
+
+  .mintDetail {
+    .mintBtn {
+      height: 36px;
+      font-size: 20px;
+      margin-top: 10px;
+
+      .loadingIconContainer {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

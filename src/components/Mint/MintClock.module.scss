@@ -1,0 +1,13 @@
+.clockImg {
+  height: 100% !important;
+  width: auto !important;
+  max-width: unset !important;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  &.active {
+    visibility: visible;
+  }
+}

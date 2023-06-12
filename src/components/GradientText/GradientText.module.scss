@@ -1,0 +1,42 @@
+.gradient_container {
+  .gradient_text {
+    font-size: 89px;
+    font-family: Gotham Ultra;
+    font-weight: bold;
+    -webkit-text-stroke: 5px transparent;
+    letter-spacing: 1.7px;
+    display: inline;
+    padding-left: 2px;
+    line-height: 1;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 72px !important;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 54px !important;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 38px !important;
+    }
+  }
+
+  h2.gradient_text {
+    font-size: 60px;
+    letter-spacing: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+
+    @media screen and (max-width: 576px) {
+      font-size: 30px !important;
+    }
+
+    @media screen and (max-width: 380px) {
+      font-size: 25px !important;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.comingSoonContainer {
+  height: 100%;
+  background-image: url('/images/countdown-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.labelContainer {
+  margin-top: 80px;
+  margin-left: 120px;
+}
+
+.tikCounterContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.catLeft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.catRight {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .labelContainer {
+    margin-left: 60px;
+  }
+
+  .catLeft {
+    width: 200px;
+  }
+
+  .catRight {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .catLeft {
+    width: 120px;
+  }
+
+  .catRight {
+    width: 150px;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .catLeft {
+    width: 200px;
+  }
+
+  .catRight {
+    width: 260px;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .catLeft {
+    width: 120px;
+  }
+
+  .catRight {
+    width: 150px;
+  }
+}

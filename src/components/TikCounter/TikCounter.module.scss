@@ -1,0 +1,28 @@
+.tikCounterContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.countDownValue {
+  font-family: 'Gotham Medium';
+  font-weight: bold;
+  font-size: 84px;
+}
+
+.separator {
+  font-family: 'Bariol';
+  font-size: 72px;
+  font-family: bold;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .countDownValue {
+    font-size: 42px;
+  }
+
+  .separator {
+    font-size: 36px;
+  }
+}

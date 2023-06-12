@@ -1,0 +1,10 @@
+@import '../../styles/colors.scss';
+
+.sepLine {
+  width: 100%;
+  background:
+    // linear-gradient(var(--background), var(--background)) padding-box,
+    // linear-gradient(to right, $blue-blue 25%, $orange 49%, $yellow 75%) border-box;
+    linear-gradient(to right, $yellow 25%, $orange-red 49%, $dark-blue 75%) border-box;
+  // border: 2px solid transparent;
+}

@@ -1,0 +1,18 @@
+.walletItem {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+.walletName {
+  font-family: 'Gotham Medium';
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: --font-color;
+  margin-left: 10px;
+}

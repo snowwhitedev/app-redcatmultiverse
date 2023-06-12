@@ -1,0 +1,109 @@
+@import './colors.scss';
+
+.pageContainer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+  position: relative;
+  height: 100%;
+}
+
+.nftStats {
+  font-family: 'Gotham Medium';
+  font-size: 28px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: --font-color;
+  margin-bottom: 20px;
+
+  span.statsMinted {
+    font-family: 'Gotham Ultra';
+    color: $orange-red;
+  }
+
+  span.statsTotal {
+    color: --font-color;
+  }
+}
+
+.mintLabel {
+  margin-top: 10px;
+  font-family: 'Bariol';
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.amountInputContainer {
+  margin-top: 10px;
+}
+
+.amountInput {
+  width: 162px;
+  padding: 20px 30px;
+  border-radius: 8px;
+  background: none;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border: solid 2px #e83324;
+  font-family: 'Bariol';
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+
+  &::selection {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.clockContainer {
+  position: absolute;
+  bottom: -2px;
+  right: 20px;
+  height: 856px;
+  max-height: calc(100vh - 220px - 100px - 30px); // bottom top
+}
+
+@media screen and (max-width: 768px) {
+  .pageContainer {
+    padding: 0 30px;
+  }
+
+  .nftStats {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  .mintLabel {
+    margin-top: 5px;
+    font-size: 20px;
+
+  }
+
+  .amountInput {
+    width: 120px;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  .clockContainer {
+    height: 340px;
+    max-height: calc(100vh - 80px - 165px - 250px - 20px); // top_menu page_content bottom space
+  }
+}
+
+/** Clock image Responsive **/
+@media screen and (max-height: 700px) {
+  .clockContainer {
+    max-height: calc(100vh - 80px - 145px - 180px - 20px); // top_menu page_content bottom space
+  }
+}

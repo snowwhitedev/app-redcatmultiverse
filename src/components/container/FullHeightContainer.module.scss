@@ -1,0 +1,18 @@
+.fullHeightContainer {
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .fullHeightContainer {
+    min-height: 550px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .fullHeightContainer {
+    padding-top: 80px;
+  }
+}
